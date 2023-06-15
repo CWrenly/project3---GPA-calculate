@@ -409,7 +409,7 @@ function handleSorting(direction) {
   });
 
   // credit事件監聽
-  let allCredits = document.querySelectorAll(".class-credit");
+  let allCredits = document.querySelectorAll(".class-credits");
   allCredits.forEach((credit) => {
     credit.addEventListener("change", () => {
       setGPA();
