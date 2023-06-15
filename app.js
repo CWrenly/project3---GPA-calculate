@@ -169,6 +169,11 @@ addbtn.addEventListener("click", () => {
   newInput3.setAttribute("type", "number");
   newInput3.setAttribute("min", "0");
   newInput3.setAttribute("max", "10");
+  newInput3.setAttribute("onkeyup", "value=value.replace(/D/g,'');");
+  newInput3.setAttribute(
+    "oninput",
+    "if(value==e)value='';if(value>10)value=10;if(value<1)value=0"
+  );
   newInput3.classList.add("class-credits");
   newInput3.setAttribute("placeholder", "credits");
   newInput3.addEventListener("change", () => {
