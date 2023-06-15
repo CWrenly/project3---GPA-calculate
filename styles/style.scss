@@ -98,11 +98,11 @@ body {
         form {
           input,
           select {
-            font-size: 1.05rem;
+            font-size: 1.15rem;
             padding: 0.5rem;
             border: 0.25px solid rgb(39, 39, 21);
             margin: 0.35rem;
-            border-radius: 0.25rem;
+            border-radius: 0.3rem;
           }
 
           input {
@@ -121,6 +121,15 @@ body {
               //pointer-events: none;
               color: white;
             }
+          }
+
+          select {
+            text-align: center;
+            background-color: grey;
+            border-radius: 65%;
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
           }
         }
       }
