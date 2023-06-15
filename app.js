@@ -25,3 +25,22 @@ time_line
 setTimeout(() => {
   animation.style.pointerEvents = "none";
 }, 2500);
+
+//讓整個網站的enter key都無法使用
+window.addEventListener("keypress", (e) => {
+  console.log(e);
+  if (e.key == "Enter") {
+    e.preventDefault();
+  }
+});
+
+//防止FORMS內部BUTTON送出表單
+let allButtons = document.querySelectorAll("button");
+allButtons.forEach((button) => {
+  console.log(button);
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+  });
+});
+
+//45646546464
